@@ -4,6 +4,11 @@
 }
 .about__title {
     text-align: start;
+    margin-bottom: 30px;
+    
+    @media screen and (min-width:1366px) {
+        margin-bottom: 50px;
+    }
 }
 
 .about__photo-container {
@@ -22,14 +27,6 @@
     }
 }
 
-.about__title {
-
-    margin-bottom: 30px;
-    
-    @media screen and (min-width:1366px) {
-        margin-bottom: 50px;
-    }
-}
 
 .about__name {
     
@@ -93,6 +90,9 @@ margin-top: 30px;
 }
 
 .about__item {
+    display: flex;
+
+
     &:not(:last-child) {
         margin-bottom: 20px;
 
@@ -100,7 +100,27 @@ margin-top: 30px;
             margin-bottom: 30px;
         }
     }
+
+    &::before {
+        display: block;
+        content: "";
+        width: 18px;
+        height: 14px;
+        background-image: url(../images/about.svg);
+        margin-right: 10px;
+        background-repeat: no-repeat;
+        background-position: center;
+        flex-shrink: 0;
+        
+
+        @media screen and (min-width:1366px) {
+        width: 25px;
+        height: 20px;
+        }
+    }
 }
+
+
 
 .about__second-list{
 font-weight: 500;
