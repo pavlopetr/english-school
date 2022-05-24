@@ -24,12 +24,21 @@ p {
 
 img {
     display: block;
-    width: 100%;
+    height: auto;
 }
 
 body {
     font-family: Montserrat, sans-serif;
-    color: $primary-text-color;
+    color: $title-text-color;
+    background-image: url(../images/body/hero-wave-tab.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-width: 1366px) {
+        background-image: url(../images/body/hero-wave-tab.png);
+    }
 }
 
 .title--hidden {
@@ -48,4 +57,36 @@ body {
 
 .text--accent {
     color: $accent-color;
+}
+
+.section-title {
+font-weight: 800;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.08em;
+color: $title-text-color;
+
+@media screen and (min-width: 768px) {
+    
+font-weight: 800;
+font-size: 26px;
+line-height: 1.3;
+letter-spacing: 0.03em;
+
+color: $title-text-color;
+}
+
+@media screen and (min-width: 1366px) {
+font-weight: 800;
+font-size: 46px;
+line-height: 1.3;
+letter-spacing: 0.03em;
+
+color: $title-text-color;
+}
+}
+
+.section {
+    margin-left: auto;
+    margin-right: auto;
 }
