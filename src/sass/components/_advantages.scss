@@ -1,0 +1,136 @@
+.advantages {
+  &__container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media screen and (min-width: 480px) {
+      max-width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      max-width: 1280px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  }
+
+  
+  background-color: $primary-white-color;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  &__title-adapted::before,
+
+  &__title-modern::before,
+
+  &__title-financial::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 61px;
+    height: 63px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+  }
+
+  &__title-adapted::before {
+    background-image: url(/images/advantages-benefits/mobile/benefits1.svg);
+  }
+
+  &__title-modern::before {
+    background-image: url(/images/advantages-benefits/mobile/benefits2.svg);
+  }
+
+  &__title-financial::before {
+    background-image: url(/images/advantages-benefits/mobile/benefits3.svg);
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.64;
+    display: flex;
+    align-items: center;
+
+    letter-spacing: 0.08em;
+    color: $title-text-color;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .advantages__icon:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &__icon:not(:last-child) {
+      margin-bottom: 0px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: -20px;
+      margin-top: -20px;
+    }
+
+    &__icon {
+      margin-top: 20px;
+      flex-basis: calc((100% - 60px) / 3);
+    }
+
+    &__icon:not(:last-child) {
+        margin-right: 20px;
+      }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .advantages {
+    padding-top: 0px;
+    padding-bottom: 130px;
+    &__list {
+      margin-left: 0px;
+      margin-top: 0px;
+    }
+    &__icon {
+      margin-left: 0px;
+      margin-top: 0px;
+      flex-basis: calc((100% - 270px) / 3);
+    }
+    &__title {
+      color: $title-text-color;
+      font-size: 20px;
+      line-height: 1.65;
+    }
+    &__title-adapted::before,
+    &__title-modern::before,
+    &__title-financial::before {
+      min-width: 102px;
+      height: 104px;
+      margin-right: -18px;
+    }
+    &__title-adapted::before {
+      background-image: url(/images/advantages-benefits/desktop/benefits1.svg);
+    }
+    &__title-modern::before {
+      background-image: url(/images/advantages-benefits/desktop/benefits2.svg);
+    }
+    &__title-financial::before {
+      background-image: url(/images/advantages-benefits/desktop/benefits3.svg);
+    }
+  }
+}
