@@ -1,0 +1,24 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,EAAE,CACF,EAAE,CACF,EAAE,CACF,EAAE,AAAC,CACC,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACb,AAED,AAAA,CAAC,AAAC,CACE,eAAe,CAAE,IAAI,CACrB,KAAK,CAAE,YAAY,CACtB,AAED,AAAA,EAAE,AAAC,CACC,UAAU,CAAE,IAAI,CAChB,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACb,AAED,AAAA,CAAC,AAAC,CACE,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACb,AAED,AAAA,GAAG,AAAC,CACA,OAAO,CAAE,KAAK,CACd,KAAK,CAAE,IAAI,CACd,AAED,AAAA,IAAI,AAAC,CACD,WAAW,CAAE,sBAAsB,CACnC,KAAK,CD9BY,OAAO,CC+B3B,AAED,AAAA,cAAc,AAAC,CACX,QAAQ,CAAE,QAAQ,CAClB,KAAK,CAAE,GAAG,CACV,MAAM,CAAE,GAAG,CACX,MAAM,CAAE,IAAI,CACZ,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CAEV,WAAW,CAAE,MAAM,CACnB,SAAS,CAAE,WAAW,CACtB,IAAI,CAAE,aAAa,CACnB,QAAQ,CAAE,MAAM,CACnB,AAED,AAAA,aAAa,AAAC,CACV,KAAK,CD9CM,OAAO,CC+CrB",
+    "sources": [
+        "../src/sass/main.scss",
+        "../src/sass/utils/_variables.scss",
+        "../src/sass/utils/_base-style.scss",
+        "../src/sass/utils/_placeholders.scss",
+        "../src/sass/components/_header.scss",
+        "../src/sass/components/_hero.scss",
+        "../src/sass/components/_advantages.scss",
+        "../src/sass/components/_problems.scss",
+        "../src/sass/components/_how-we-do.scss",
+        "../src/sass/components/_program.scss",
+        "../src/sass/components/_benefits.scss",
+        "../src/sass/components/_about.scss",
+        "../src/sass/components/_guarantee.scss",
+        "../src/sass/components/_reviews.scss",
+        "../src/sass/components/_contacts.scss",
+        "../src/sass/components/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.min.css"
+}
