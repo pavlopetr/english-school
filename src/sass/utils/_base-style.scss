@@ -24,13 +24,21 @@ p {
 
 img {
     display: block;
-    width: 100%;
     height: auto;
 }
 
 body {
     font-family: Montserrat, sans-serif;
     color: $title-text-color;
+    background-image: url(../images/body/hero-wave-tab.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-width: 1366px) {
+        background-image: url(../images/body/hero-wave-tab.png);
+    }
 }
 
 .title--hidden {
