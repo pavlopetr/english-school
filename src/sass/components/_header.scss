@@ -20,7 +20,6 @@
     line-height: 1.2;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    width: 128px;
 
     @media screen and (min-width: 768px) {
         font-weight: 700;
@@ -28,20 +27,19 @@
         line-height: 1.25;
     }
     @media screen and (min-width: 1366px) {
+        flex-shrink: 0;
         margin-right: 144px;
-        display: block;
-        height: 45px;
-        width: 238px;
     }
 }
 
 .header-logo--accent {
-font-weight: 700;
-font-size: 23px;
-line-height: 1.2;
-letter-spacing: 0.04em;
-text-transform: uppercase;
-color: $title-text-color;
+    display: block;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $title-text-color;
 
     @media screen and (min-width: 768px) {
         font-weight: 800;
@@ -50,10 +48,20 @@ color: $title-text-color;
     }
 }
 
+.header-logo--fire {
+    width: 14px;
+    height: 20px;
+
+    @media screen and (min-width: 768px) {
+        width: 22px;
+        height: 30px;
+    }
+}
+
 .header-menu__btn {
     width: 21px;
     height: 21px;
-    position: absolute;
+    position: fixed;
     top: 37px;
     right: 20px;
     margin: 0;
@@ -66,19 +74,45 @@ color: $title-text-color;
     border: none;
 
         @media screen and (min-width: 768px) {
+            top: 44px;
+            right: 44px;
+        }
+
+        @media screen and (min-width: 1366px) {
             display: none;
         }
 }
 
+.header__icon--menu {
+    .header-menu__btn.is-open & {
+        display: none;
+    }
+
+    .header-menu__btn & {
+        display: block;
+    }
+}
+
+.header__icon--close {
+    .header-menu__btn & {
+        display: none;
+    }
+
+    .header-menu__btn.is-open & {
+        display: block;
+    }
+}
+
 .hero-menu__box {
     width: 100%;
-    padding-top: 108px;
+    padding-top: 30px;
+    
 
     @media screen and (min-width: 768px) {
-            padding-top: 159px;
-        }
+        padding-top: 42px;
+    }
 
-    @media screen and (max-width: 1365px) {
+    @media screen and (max-width: 1365px) {      
         position: fixed;
         display: none;
         width: 100%;
@@ -95,7 +129,47 @@ color: $title-text-color;
     &.is-open {
         display: flex;
         z-index: 2;
+        flex-direction: column;
     }
+}
+
+.mobile-menu__container {
+    @media screen and (max-width: 1365px) {
+        padding-left: 15px;
+            padding-right: 15px;
+            margin-left: auto;
+            margin-right: auto;
+        
+            @media screen and (min-width: 480px) {
+                width: 310px;
+            }
+        
+            @media screen and (min-width: 768px) {
+                padding-left: 26px;
+                padding-right: 26px;
+                width: 740px;
+            }
+        }
+    
+} 
+
+
+.header-logo--mobile-menu {
+    display: none;
+    
+    .hero-menu__box.is-open & {
+        display: block;
+        margin-bottom: 48px;
+        color: $primary-white-color;
+
+        @media screen and (min-width: 768px) and (max-width: 1365px) {
+            margin-bottom: 72px;
+        }
+    }
+}
+
+.header-logo--accent--mobile-menu {
+    color: $primary-white-color;;
 }
 
 .site-nav {
@@ -105,12 +179,12 @@ color: $title-text-color;
 
     @media screen and (min-width: 768px) and (max-width: 1365px) {
         max-width: 332px;
+        padding-left: 0;
+        padding-right: 0;
         margin-left: auto;
         margin-right: auto;
     }
-    @media screen and (min-width: 768px) {
-        width: 100%;
-    }
+    
     @media screen and (min-width: 1366px) {
         margin-bottom: 0;
         padding-left: 0;
@@ -126,12 +200,15 @@ color: $title-text-color;
 }
 
 .site-nav__item {
-    &:not(:last-child) {
-        margin-right: 40px;
-    }
+    @media screen and (min-width: 1366px) {
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+    }    
 }
 
 .site-nav__link {
+    display: block;
     font-weight: 800;
     font-size: 20px;
     line-height: 1.8;
@@ -145,6 +222,10 @@ color: $title-text-color;
     }
 
     @media screen and (min-width: 768px) {
+        font-size: 26px; 
+    }
+
+    @media screen and (min-width: 1366px) {
         font-weight: 700;
         font-size: 14px;
         line-height: 1.21;
@@ -170,7 +251,7 @@ color: $title-text-color;
     border: 2px solid $accent-color;
     background-color: transparent;
 
-    @media screen and (min-width: 1366px) {
+    @media screen and (min-width: 768px) {
         display: none;
     }
 }

@@ -1,34 +1,43 @@
 <header class="header__section">
     <div class="header__container">
-        <!-- <img class="header-logo--fire" src="images/header-svg/сampfire.svg" alt="logotype"> -->
         <a class="header-logo" href="#">
-            <span class="header-logo--accent">Hell EN</span>
+            <span class="header-logo--accent">Hell<svg class="header-logo--fire">
+                <use href="./images/header-svg/sprite-header.svg#icon-logo-fire"></use>
+            </svg>EN</span>
             <span class="text--accent">hellish</span> english
         </a>
         <button class="header-menu__btn" type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
-            <svg class="menu__icon" width="21px" height="21px" aria-label="Переключатель мобильного меню">
-                <use class="header__icon--menu" href=""></use>
-                <use class="header__icon--close" href=""></use>
+            <svg class="menu__icon" aria-label="Переключатель мобильного меню" width="21px" height="21px">
+                <use class="header__icon--menu" href="./images/header-svg/sprite-header.svg#icon-burger-menu"></use>
+                <use class="header__icon--close" href="./images/header-svg/sprite-header.svg#icon-burger-close"></use>
             </svg>
         </button>
-        <div class="hero-menu__box">
-            <nav class="site-nav" id="menu-container" data-menu>
-                <ul class="site-nav__list">
-                    <li class="site-nav__item">
-                        <a class="site-nav__link" href="">Studying program</a>
-                    </li>
-                    <li class="site-nav__item">
-                        <a class="site-nav__link" href="">About</a>
-                    </li>
-                    <li class="site-nav__item">
-                        <a class="site-nav__link" href="">Training options</a>
-                    </li>
-                    <li class="site-nav__item">
-                        <a class="site-nav__link" href="">Contacts</a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="header__btn-consultation--mobile">consultation by phone</button>
+        <div class="hero-menu__box" id="menu-container" data-menu>
+            <div class="mobile-menu__container">
+                <a class="header-logo header-logo--mobile-menu" href="#">
+                    <span class="header-logo--accent header-logo--accent--mobile-menu">Hell<svg class="header-logo--fire">
+                            <use href="./images/header-svg/sprite-header.svg#icon-logo-fire"></use>
+                        </svg>EN</span>
+                    <span class="text--accent">hellish</span> english
+                </a>
+                <nav class="site-nav">
+                    <ul class="site-nav__list">
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="">Studying program</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="">About</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="">Training options</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="header__btn-consultation--mobile">consultation by phone</button>
+            </div>
         </div>
         <button class="header__btn-consultation">consultation by phone</button>
     </div>
