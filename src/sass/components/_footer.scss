@@ -124,7 +124,7 @@
 
 
 .footer__copyright{
-  
+    @extend %container;
     color:$primary-text-color;
     
     padding-top: 20px;
@@ -134,15 +134,17 @@
     font-size: 14px;
     line-height: 28px; 
     @media screen and (min-width: 768px){
-        padding-left: 40px;
+        // padding-left: 40px;
         text-align: left;
     }
     @media screen and (min-width: 1366px){
-        padding-left: 183px;
+        // padding-left: 183px;
         text-align: left;
     }
 }
-.copyright-block{
+.copyright-block {
+    width: 100%;
+   
     background-color:$title-text-color;
     background-size: cover;
 }
