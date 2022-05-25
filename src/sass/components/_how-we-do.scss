@@ -137,9 +137,9 @@
         width: 20px;
         background-color: $accent-color;
 
-        .how-we-do__link:hover~&,
-        .how-we-do__link:focus~& {
-            color: $primary-white-color;
+        .how-we-do__link:hover &,
+        .how-we-do__link:focus & {
+            background-color: $primary-white-color;
         }
 
     @media screen and (min-width: 768px) {
