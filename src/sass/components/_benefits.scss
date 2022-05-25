@@ -1,23 +1,21 @@
 .benefits {
-    position: absolute;
-    top: 5191px;
-    // left: 20px;
-    z-index: 10;
+    // position: relative;
+    // top: -480px;
+
+    // z-index: 10;
 
     width: 100%;
 
     @media screen and (min-width: 768px) {
-        top: 3448px;
-        // left: 0;
-
+    
         background-image:linear-gradient(to bottom, $title-text-color 50%, $primary-white-color 50%);   
     }
 
     @media screen and (min-width: 1366px) {
-        top: 4080px;
-        // left: 183px;
+        // transform: translateY(-50%);
+        
+        background-image: none;
 
-        background-image: none;   
     }
 }
 
@@ -26,7 +24,7 @@
     // padding-right: 20px;
     // padding-left: 20px;
     margin-bottom: 0;
-    outline: 1px solid tomato;
+    // outline: 1px solid tomato;
 }
 
 .benefits__title {
@@ -57,7 +55,7 @@
      @media screen and (min-width:1366px) {
         // @extend .title--hidden;
 
-            position: absolute;
+        position: absolute;
         width: 1px;
         height: 1px;
         margin: -1px;
