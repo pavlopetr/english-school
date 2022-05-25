@@ -7,7 +7,7 @@
         background-image: url(../images/problems-campfire.svg), linear-gradient(to bottom, $title-text-color 78%, $primary-white-color 78%);
         background-repeat: no-repeat;
         background-size: auto;
-        background-position: top 40% right, center;
+        background-position: top 32% right, center;
     }
 }
 
@@ -16,7 +16,6 @@
     // padding-right: 20px;
     // padding-left: 20px;
     margin-bottom: 0;
-    // outline: 1px solid tomato;
 }
 
 .problems__title {
@@ -60,6 +59,9 @@
 }
 
 .problems__list {
+    position: relative;
+    z-index: 10;
+    
     width: 100%;
     padding: 20px 27px;
 
