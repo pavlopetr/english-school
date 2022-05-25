@@ -1,0 +1,13 @@
+@mixin font($weight, $size, $height, $spacing) {
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    letter-spacing: $spacing;
+  }
+  
+  @mixin flex($align, $justify) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+  }
+  

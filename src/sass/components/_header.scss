@@ -1,5 +1,7 @@
 .header__section {
-    background-color: $primary-white-color;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
 }
 
 .header__container {
@@ -72,6 +74,7 @@
     z-index: 3;
     background-color: transparent;
     border: none;
+    cursor: pointer;
 
         @media screen and (min-width: 768px) {
             top: 44px;
@@ -106,7 +109,7 @@
 .hero-menu__box {
     width: 100%;
     padding-top: 30px;
-    
+    animation: $animation-image;
 
     @media screen and (min-width: 768px) {
         padding-top: 42px;
@@ -136,21 +139,20 @@
 .mobile-menu__container {
     @media screen and (max-width: 1365px) {
         padding-left: 15px;
-            padding-right: 15px;
-            margin-left: auto;
-            margin-right: auto;
-        
-            @media screen and (min-width: 480px) {
-                width: 310px;
-            }
-        
-            @media screen and (min-width: 768px) {
-                padding-left: 26px;
-                padding-right: 26px;
-                width: 740px;
-            }
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    
+        @media screen and (min-width: 480px) {
+            width: 310px;
         }
     
+        @media screen and (min-width: 768px) {
+            padding-left: 26px;
+            padding-right: 26px;
+            width: 740px;
+        }
+    }   
 } 
 
 
@@ -250,6 +252,14 @@
     min-height: 48px;
     border: 2px solid $accent-color;
     background-color: transparent;
+    cursor: pointer;
+    transition: color $transition, background-color $transition;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        color: $primary-white-color;
+    }
 
     @media screen and (min-width: 768px) {
         display: none;
@@ -277,6 +287,14 @@
         background-color: transparent;
         padding-left: 5px;
         padding-right: 5px;
+        cursor: pointer;
+        transition: color $transition, background-color $transition;
+
+        &:hover,
+        &:focus {
+            background-color: $accent-color;
+            color: $primary-white-color;
+        }
     }
     @media screen and (min-width: 1366px) {
         margin-right: 0;
