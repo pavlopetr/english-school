@@ -99,6 +99,13 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 54px;
+    cursor: pointer;
+    transition: transform $transition;
+
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+    }
 
     @media screen and (min-width: 768px) {
         margin-left: 0;
@@ -115,15 +122,13 @@
 
 .hero__img {
     margin: 0 auto;
-    // width: 208px;
+    animation: $animation-image;
     @media screen and (min-width: 768px) {
         position: absolute;
         top: 158px;
         right: 4px;
-        // width: 370px;
     }
     @media screen and (min-width: 1366px) {
-        // width: 842px;
         top: 130px;
         right: -82px;
     }
