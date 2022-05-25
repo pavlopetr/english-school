@@ -1,14 +1,28 @@
 .problems {
     width: 100%;
-    background-image: linear-gradient(to bottom, $title-text-color 78%, $primary-white-color 78%);
+
+    background-image:linear-gradient(to bottom, $title-text-color 78%, $primary-white-color 78%);   
+
+    @media screen and (min-width:1366px) {
+        background-image: url(../images/problems-campfire.svg), linear-gradient(to bottom, $title-text-color 78%, $primary-white-color 78%);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: top 40% right, center;
+    }
 }
 
 .problems__container {
     @extend %container;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 0;
+    outline: 1px solid tomato;
 }
 
 .problems__title {
-    max-width: 100%;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
 
     font-weight: 800;
     font-size: 24px;
@@ -23,13 +37,13 @@
     }
 
     @media screen and (min-width:768px){
-        max-width: 480px;
+        max-width: 450px;
         padding-top: 55px;
         padding-bottom: 30px;
     }
 
      @media screen and (min-width:1366px){
-        max-width: 810px;
+        max-width: 805px;
         padding-top: 100px;
         padding-bottom: 68px;
 
@@ -46,16 +60,13 @@
 }
 
 .problems__list {
-    max-width: 100%;
+    width: 100%;
     padding: 20px 27px;
-    margin: auto;
-    margin-bottom: -15px;
 
     background-color: $primary-white-color;
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     
     counter-reset: item;
-
 
     @media screen and (min-width:480px){
         max-width: 280px;
@@ -65,8 +76,10 @@
     @media screen and (min-width:768px){
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
 
         max-width: 688px;
+        // height: 303px;
         padding: 28px 100px;
     }
 
@@ -77,10 +90,31 @@
 }
 
 .problems__item {
-    outline: 1px solid tomato;
-            
-    padding-bottom: 15px;
+    margin-bottom: 15px;
 
+    @media screen and (min-width:768px) {
+        width: 200px;
+        margin-bottom: 0;
+
+        &:not(:nth-child(n+5)) {
+            margin-bottom: 20px;
+        }
+    }
+
+    @media screen and (min-width: 1366px) {
+        width: 336px;
+
+        &:not(:nth-child(n+5)) {
+            margin-bottom: 0;
+        }
+
+        &:nth-child(-n+3) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.problems__text {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.71;
@@ -90,7 +124,7 @@
     &::before {
         counter-increment: item;
         content: "— " counter(item);
-
+        display: block;
         margin-bottom: 5px;
 
         font-weight: 700;
@@ -98,13 +132,33 @@
         line-height: 1.2;
         letter-spacing: 0.08em;
         color: $accent-color;
+
+        counter-increment: item;
+        content: "— 0" counter(item);
+    }
+
+    @media screen and (min-width: 480px) {
+        max-width: 226px;
     }
 
     @media screen and (min-width: 768px) {
-        width: 200px;
-        height: 69px;
-        margin-top: 20px;
-        margin-left: 88px;
+        max-width: 200px;
+        line-height: 1.43;
+        
+        &::before {
+            font-size: 14px;
+            line-height: 1.25;
+        }
+    }
+
+    @media screen and (min-width: 1366px) {
+        max-width: 336px;
+        font-size: 20px;
+        line-height: 1.4;
+        
+        &::before {
+            font-size: 20px;
+            line-height: 1.65;
+        }
     }
 }
-
