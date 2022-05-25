@@ -1,0 +1,148 @@
+.footer__container{
+    @extend %container;
+    align-items: center;
+    padding-top: 24px;
+    @media screen and (min-width: 768px){
+        display: flex;
+        padding-top: 50px;
+        padding-bottom: 40px;
+        
+    }
+    @media screen and (min-width: 1366px){
+        display: flex;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+   
+   
+}
+.footer-logo--block{
+    display: flex;
+    justify-content: center;
+  
+}
+.footer-logo{
+    font-weight: 700;
+    font-size: 5px;
+    line-height: 1.2;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+
+    @media screen and (min-width: 768px) {
+        font-weight: 700;
+        font-size: 8px;
+        line-height: 1.25;
+    }
+    @media screen and (min-width: 1366px) {
+        flex-shrink: 0;
+        margin-right: 144px;
+    }
+}
+
+.footer-logo--accent{
+    display: block;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $title-text-color;
+    @media screen and (min-width: 768px) {
+        font-weight: 800;
+        font-size: 26px;
+        line-height: 1.23;
+    }
+}
+
+.footer-logo--fire{
+    width: 14px;
+    height: 20px;
+
+    @media screen and (min-width: 768px) {
+        width: 22px;
+        height: 30px;
+    }
+}
+.footer__container-num{
+    display: flex;
+    justify-content: center
+}
+
+.footer__contact-num{
+  color:$title-text-color;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.08em;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  @media screen and (min-width: 768px){
+    font-size: 20px;
+    line-height: 24px;
+  }
+  @media screen and (min-width: 1366px){
+    font-size: 30px;
+    line-height: 37px;
+}
+}
+
+.contact__icon{
+    fill:$accent-color;
+    width: 20px;
+    height: 20px;
+    @media screen and (min-width: 768px) {
+        width: 22px;
+        height: 22px;
+    }
+    @media screen and (min-width: 1366px) {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.footer__linc-inst{
+   
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-image:url(/images/insta.jpg);
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+        width: 40px;
+        height: 40px;
+        align-items: center;
+    }
+        @media screen and (min-width: 1366px) {
+            width: 40px;
+            height: 40px;
+            align-items: center;
+        }
+}
+
+
+.footer__copyright{
+  
+    color:$primary-text-color;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px; 
+    @media screen and (min-width: 768px){
+        padding-left: 40px;
+        text-align: left;
+    }
+    @media screen and (min-width: 1366px){
+        padding-left: 183px;
+        text-align: left;
+    }
+}
+.copyright-block{
+    background-color:$title-text-color;
+    background-size: cover;
+}
