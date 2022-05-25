@@ -136,6 +136,7 @@
         height: 2px;
         width: 20px;
         background-color: $accent-color;
+        transition: background-color $transition;
 
         .how-we-do__link:hover &,
         .how-we-do__link:focus & {
