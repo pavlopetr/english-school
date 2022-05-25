@@ -13,6 +13,7 @@
 }
 
 .how-we-do__container {
+    outline: 1px solid tomato;
     @extend %container;
 }
 

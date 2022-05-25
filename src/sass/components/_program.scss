@@ -4,8 +4,16 @@
 }
 
 .program-section {
-    padding-top: 120px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    @media screen and (min-width:768px) {
+        padding-bottom: 170px;
+    }
+    @media screen and (min-width:1366px) {
+        padding-top: 120px;
     padding-bottom: 120px;
+    }
     background-color: $title-text-color;
 }
 

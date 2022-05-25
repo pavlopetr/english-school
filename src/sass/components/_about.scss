@@ -188,8 +188,10 @@ line-height: 28px;
 }
 .about-section{
     padding-bottom: 70px;
+    padding-bottom: 70px;
 
     @media screen and (min-width:1366px) {
         padding-bottom: 130px;
+        padding-top: 130px;
     }
 }

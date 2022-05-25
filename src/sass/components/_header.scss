@@ -5,6 +5,7 @@
 }
 
 .header__container {
+    outline: 1px solid tomato;
     @extend %container;
     display: flex;
     justify-content: space-between;

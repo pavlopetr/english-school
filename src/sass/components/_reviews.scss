@@ -4,7 +4,7 @@
   
     @media screen and (min-width: 1280px) {
       padding-top: 42px;
-      padding-bottom: 103px;
+      padding-bottom: 130px;
     }
   
     &__title {
@@ -30,6 +30,7 @@
   
   .reviews {
     &__container {
+      outline: 1px solid tomato;
       margin-right: auto;
       margin-left: auto;
       padding-left: 20px;
