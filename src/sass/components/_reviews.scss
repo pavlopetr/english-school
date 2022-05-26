@@ -37,26 +37,6 @@
 
 .reviews {
   &__container {
-    // margin-right: auto;
-    // margin-left: auto;
-    // padding-left: 20px;
-    // padding-right: 20px;
-    // position: relative;
-
-    // @media screen and (min-width: 480px) {
-    //   max-width: 320px;
-    // }
-
-    // @media screen and (min-width: 768px) {
-    //   max-width: 740px;
-    //   padding-left: 26px;
-    //   padding-right: 26px;
-    // }
-
-    // @media screen and (min-width: 1366px) {
-    //   max-width: 1090px;
-    //   padding-right: 26px;
-    //   padding-left: 26px;
     border: 1px solid tomato;
     position: relative;
     @extend %container;
@@ -70,22 +50,14 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 0px;
-    // padding-left: 10px;
-    // padding-right: 10px;
     margin-top: 0px;
   }
-
-  // @media screen and (min-width: 1366px) {
-  //   padding: 50px 112px 50px 82px;
-
-  // }
 }
 
 .reviewer {
 
   @media screen and (min-width: 768px) {
     .slick-initialized &.slick-slide {
-      // box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
       display: flex;
@@ -282,48 +254,13 @@
   &__img--tablet {
     display: none;
   }
-
-  // &__icon {
-  //   // width: 25px;
-  //   position: absolute;
-  //     top: 350px;
-  //     &--left {
-  //       left: 1px;
-  //     }
-  //     &--right {
-  //       right: 10px;
-  //     }
-
-  //   cursor: pointer;
-  //   fill: $accent-color;
-  //   @media screen and (min-width: 768px) {
-  //     position: absolute;
-  //     top: 220px;
-  //     &--left {
-  //       left: 27px;
-  //     }
-  //     &--right {
-  //       right: 27px;
-  //     }
-  //   }
-  //   @media screen and (min-width: 1366px) {
-  //     top: 205px;
-  //     &--left {
-  //       left: 53px;
-  //     }
-  //     &--right {
-  //       right: 53px;
-  //     }
-  //   }
-  // }
 }
 
-// buttons
+
 
 .change-reviewer__button {
   width: 25px;
   border: 0px;
-  // border: 1px solid tomato;
   position: absolute;
   background-color: transparent;
 
@@ -370,5 +307,3 @@
   width: 25px;
   margin: -10px;
 }
-
-// <img-loading="lazy"
