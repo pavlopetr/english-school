@@ -1553,6 +1553,7 @@ body {
 
 .benefits {
   width: 100%;
+  margin-top: -1px;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(67%, #111518), color-stop(67%, #ffffff));
   background-image: linear-gradient(to bottom, #111518 67%, #ffffff 67%);
 }
