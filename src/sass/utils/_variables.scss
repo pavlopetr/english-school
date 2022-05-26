@@ -14,10 +14,12 @@ $animation-image: animate-scale 2000ms cubic-bezier(0.4, 0, 0.2, 1);
 
 @keyframes animate-scale {
     0% {
-        transform: scale(0.3);
+        transform: scale(0.7);
+        opacity: 0;
     }
 
     100% {
         transform: scale(1);
+        opacity: 1;
     }
 }

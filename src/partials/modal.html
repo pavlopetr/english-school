@@ -1,0 +1,50 @@
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button class="modal__btn--close" data-modal-close>
+            <svg class="modal__icon--close" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <form class="modal-form">
+            <b class="modal-form__call">Leave your details, we will call you back</b>
+            <div class="modal-form__field">
+                <label for="name" class="modal-form__label--data">Name</label>
+                <input type="name" class="modal-form__input--data" name="name" id="name">
+                <svg class="modal-form__icon--data" width="18px" height="18px">
+                    <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+            </div>
+            <div class="modal-form__field">
+                <label for="tel" class="modal-form__label--data">Surname</label>
+                <input type="tel" class="modal-form__input--data" name="tel" id="tel">
+                <svg class="modal-form__icon--data" width="18px" height="18px">
+                    <use href="./images/icons.svg#icon-phone-modal"></use>
+                </svg>
+            </div>
+            <div class="modal-form__field">
+                <label for="email" class="modal-form__label--data">Mail</label>
+                <input type="email" class="modal-form__input--data" name="email" id="email">
+                <svg class="modal-form__icon--data" width="18px" height=18px>
+                    <use href="./images/icons.svg#icon-email-modal"></use>
+                </svg>
+            </div>
+            <div class="modal-form__field--comment">
+                <label class="modal-form__label--data" for="comment">Comment</label>
+                <textarea class="modal-form__input--comment" name="comment" id="comment" placeholder="Enter text"></textarea>
+            </div>
+            <div class="checkbox__field">
+                <label class="checkbox__label--policy" for="policy">
+                    <input class="checkbox__input--default" type="checkbox" name="policy" id="policy">
+                    <span class="checkbox--custom">
+                        <svg class="checkbox__icon" width="16px" height="15px">
+                            <use href="./images/icons.svg#icon-icon-check"></use>
+                        </svg>
+                    </span>
+                    <span class="checkbox__text">I agree with the newsletter and accept <button class="checkbox__btn--policy"
+                            type="button">Terms of an agreement</button></span>
+                </label>
+            </div>
+            <button class="modal-form__btn--send" type="submit">SEND</button>
+        </form>
+    </div>
+</div>
