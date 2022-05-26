@@ -3,13 +3,13 @@
   padding-bottom: 61px;
 
   @media screen and (min-width: 768px) {
-    padding-top: 70px;
-    padding-bottom: 70px;
+  padding-top: 70px;
+  padding-bottom: 70px;
   }
 
   @media screen and (min-width: 1366px) {
-    padding-top: 130px;
-    padding-bottom: 130px;
+  padding-top: 130px;
+  padding-bottom: 130px;
   }
 
   &__title {
@@ -27,7 +27,6 @@
       margin-bottom: 30px;
       font-size: 26px;
     }
-
     @media screen and (min-width: 1366px) {
       margin-bottom: 50px;
       font-size: 46px;
@@ -40,14 +39,13 @@
     border: 1px solid tomato;
     position: relative;
     @extend %container;
+    }
   }
-}
 
 
 .slick-list {
   padding: 40px;
   margin: -20px;
-
   @media screen and (min-width: 768px) {
     padding-top: 0px;
     margin-top: 0px;
@@ -55,11 +53,11 @@
 }
 
 .reviewer {
-
+  
   @media screen and (min-width: 768px) {
-    .slick-initialized &.slick-slide {
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+  .slick-initialized &.slick-slide {
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    
       display: flex;
       padding: 40px;
       justify-content: center;
@@ -67,19 +65,18 @@
 
     @media screen and (min-width: 1366px) {
       .slick-initialized &.slick-slide {
-        padding: 50px 112px 51px 82px;
-      }
+      padding: 50px 112px 51px 82px;
     }
+  }
 
     &__column:first-child {
       margin-right: 46px;
-
       @media screen and (min-width: 1366px) {
         margin-right: 40px;
       }
     }
   }
-
+  
 
   &__img {
     display: block;
@@ -90,13 +87,11 @@
     width: 90px;
     height: 90px;
     border-radius: 50%;
-
     @media screen and (min-width: 768px) {
       width: 150px;
       height: 150px;
     }
   }
-
   &__link {
     display: flex;
     margin-left: auto;
@@ -106,7 +101,6 @@
     width: 30px;
     height: 30px;
   }
-
   &__social {
     fill: #436eab;
   }
@@ -128,7 +122,6 @@
       line-height: 1.2;
       text-align: left;
     }
-
     @media screen and (min-width: 1366px) {
       margin-bottom: 10px;
       font-size: 30px;
@@ -151,7 +144,6 @@
       margin-bottom: 20px;
       text-align: left;
     }
-
     @media screen and (min-width: 1366px) {
       max-width: 482px;
       font-weight: 500;
@@ -164,7 +156,7 @@
 }
 
 .review {
-  margin-bottom: 52px;
+  margin-bottom: 40px;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.67;
@@ -173,11 +165,9 @@
   @media screen and (min-width: 768px) {
     min-width: 412px;
   }
-
   @media screen and (min-width: 1366px) {
     max-width: 706px;
   }
-
   color: $accent-description;
 
   &__link {
@@ -187,14 +177,12 @@
     text-decoration-line: underline;
     color: $accent-color;
   }
-
   @media screen and (min-width: 768px) {
     padding-left: 0;
     padding-right: 0;
     margin-bottom: 0;
     text-align: left;
   }
-
   @media screen and (min-width: 1366px) {
     min-width: 706px;
     font-size: 18px;
@@ -218,23 +206,19 @@
     display: block;
     margin-top: 30px;
   }
-
   @media screen and (min-width: 1366px) {
     margin-top: 40px;
   }
-
   &__collection {
     display: flex;
     margin-left: auto;
     margin-right: auto;
     width: 182px;
     justify-content: space-between;
-
     @media screen and (min-width: 768px) {
       width: 558px;
     }
   }
-
   &__item--tablet {
     display: none;
 
@@ -250,53 +234,42 @@
 
     cursor: pointer;
   }
-
   &__img--tablet {
     display: none;
   }
 }
-
-
 
 .change-reviewer__button {
   width: 25px;
   border: 0px;
   position: absolute;
   background-color: transparent;
-
-  top: 590px;
-
-  &--left {
-    left: 0px;
-  }
-
-  &--right {
-    right: 0px;
-  }
+  
+    top: 583px;
+    &--left {
+      left: 0px;
+    }
+    &--right {
+      right: 0px;
+    }
 
   cursor: pointer;
   fill: $accent-color;
-
   @media screen and (min-width: 768px) {
     position: absolute;
-    top: 140px;
-
+    top: 150px;
     &--left {
-      left: 30px;
+      left: 0px;
     }
-
     &--right {
       right: 0px;
     }
   }
-
   @media screen and (min-width: 1366px) {
     top: 205px;
-
     &--left {
       left: 1px;
     }
-
     &--right {
       right: 1px;
     }
