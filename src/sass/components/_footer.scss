@@ -1,6 +1,5 @@
 
 .footer__container {
-    outline: 1px solid tomato;
     @extend %container;
     display: flex;
     flex-direction: column;
