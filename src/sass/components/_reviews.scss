@@ -245,33 +245,33 @@
   position: absolute;
   background-color: transparent;
   
-    top: 583px;
+    bottom: -17px;
     &--left {
-      left: 0px;
+      left: calc(50% - 155px);
     }
     &--right {
-      right: 0px;
+      right: calc(50% - 135px);
     }
 
   cursor: pointer;
   fill: $accent-color;
   @media screen and (min-width: 768px) {
     position: absolute;
-    top: 150px;
+    top: -35px;
     &--left {
-      left: 0px;
+      left: calc(50% - 355px);
     }
     &--right {
-      right: 0px;
+      right: calc(50% - 355px);
     }
   }
   @media screen and (min-width: 1366px) {
-    top: 205px;
+    top: 0;
     &--left {
-      left: 1px;
+      left: calc(50% - 620px);
     }
     &--right {
-      right: 1px;
+      right: calc(50% - 620px);
     }
   }
 }

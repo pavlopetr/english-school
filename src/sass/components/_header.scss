@@ -2,6 +2,8 @@
     position: absolute;
     width: 100%;
     z-index: 10;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .header__container {
@@ -9,8 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    
     @media screen and (max-width: 1365px) {
         position: relative;
     }
@@ -71,7 +72,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 3;
+    z-index: 99;
     background-color: transparent;
     border: none;
     cursor: pointer;
