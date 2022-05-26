@@ -788,7 +788,7 @@ body {
 
 @media screen and (min-width: 1366px) {
   .advantages {
-    padding-top: 0px;
+    padding-top: 130px;
     padding-bottom: 130px;
   }
   .advantages__list {
@@ -2148,8 +2148,8 @@ body {
 
 @media screen and (min-width: 768px) {
   .slick-initialized .reviewer.slick-slide {
-    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+            box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2267,7 +2267,7 @@ body {
 }
 
 .review {
-  margin-bottom: 52px;
+  margin-bottom: 40px;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.67;
@@ -2389,7 +2389,7 @@ body {
   border: 0px;
   position: absolute;
   background-color: transparent;
-  top: 590px;
+  top: 583px;
   cursor: pointer;
   fill: #ff6b09;
 }
@@ -2405,10 +2405,10 @@ body {
 @media screen and (min-width: 768px) {
   .change-reviewer__button {
     position: absolute;
-    top: 140px;
+    top: 150px;
   }
   .change-reviewer__button--left {
-    left: 30px;
+    left: 0px;
   }
   .change-reviewer__button--right {
     right: 0px;
