@@ -165,7 +165,7 @@ opacity: 0.5;
 .program__list {
     position: relative;
     @media screen and (max-width:1365px) {
-        margin-left: 80px;
+        padding-left: 80px;
     }
     &::before{
         content: "";
@@ -173,7 +173,7 @@ opacity: 0.5;
         border: 2px solid $primary-white-color;
         height: 92%;
         position: absolute;
-        left: -25px;
+        left: 55px;
         top: 12px;
 
         @media screen and (min-width:768px) {
